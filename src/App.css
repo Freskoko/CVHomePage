@@ -1,10 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 110%;
 }
-
-/* background: linear-gradient(180deg, rgba(97, 183, 244, 0.3) 0%, rgba(231, 34, 12, 0.5) 100%); */
 
 .AppWrapper {
   background: linear-gradient(180deg, rgba(4, 255, 8, 0.3) 0%, rgba(225, 0, 255, 0.908) 100%);

@@ -21,10 +21,10 @@ function StartHeader(){
   )
 }
 
-function TopRightImage(){
-  return(
-    <img className = "Mediumimg" src="MyLogo.png"></img>
-  )
+function TopRightImage() {
+  return (
+    <img className="Mediumimg" src="MyLogo.png" alt="Top Right Logo" />
+  );
 }
 
 function InfoBarLinks(){
@@ -106,7 +106,7 @@ function CVItemText({ data }) {
 
       <div className="CVItemImage">
 
-      <a href={data.link} target="_blank"><img src="https://jfreyberg.github.io/feathericons/link.svg" className='ImageLinkElement' /></a>
+      <a href={data.link} target="_blank"  rel="noopener noreferrer"><img src="https://jfreyberg.github.io/feathericons/link.svg" className='ImageLinkElement' /></a>
 
       </div>
 
