@@ -1,0 +1,52 @@
+{
+
+    "job1": {
+      "title": "University of Bergen, Social media",
+      "description": "Social media responsible (@realfaguib)",
+        "time":"AUGUST 2022 - PRESENT , Bergen",
+        "link":"https://www.instagram.com/realfaguib/",
+        "thing1":"Responsible for the Instagram/TikTok for Natural Sciences at UiB (@realfaguib)",
+        "thing2":"Carried out several visits to companies and schools"
+    }
+    ,
+    "job2": {
+        "title": "Baker Brun",
+        "description": "Store employee",
+          "time":"MAY 2022 - SEPTEMBER 2022, Bergen",
+          "link":"https://bakerbrun.no/bakeriutsalg/bryggen/",
+          "thing1":"Working service, at the most hectic time of year",
+          "thing2":"Further developed team communication skills"
+    }
+    ,
+    "job3": {
+          "title": "Slettemarken sykehjem",
+          "description": "Patient care",
+            "time":"JULY 2020 - AUGUST 2020, Bergen",
+            "link":"https://www.bergen.kommune.no/omkommunen/avdelinger/slettemarken-sykehjem",
+            "thing1":"Working service, at the most hectic time of year",
+            "thing2":"Further developed team communication skills"
+    }
+    ,
+
+    "job4": {
+          "title": "Bergen Pride",
+          "description": "Voluntary work",
+            "time":"MAY 2019 - JULY 2019, Bergen",
+            "link":"https://bergenpride.no/",
+            "thing1":"Arranging the pride parade",
+            "thing2":"Ensuring saftey of event"
+    }
+    ,
+
+    "job5": {
+            "title": "Bergen Røde Kors Sykehjem",
+            "description": "Visiting residents (Voluntary)",
+              "time":"OCTOBER 2018 - DECEMBER 2019, Bergen",
+              "link":"http://brks.no/",
+              "thing1":"Use of wheelchairs, first aid",
+              "thing2":"Conversational-techniques (residents with special needs)"
+    }
+
+    
+
+}

@@ -1,0 +1,30 @@
+{
+
+    "job1": {
+      "title": "University of Bergen",
+      "description": "Bachlelor in Biology",
+        "time":"AUGUST 2021 - CURRENT, Bergen",
+        "link":"https://www.uib.no/studier/BAMN-BIO",
+        "thing1":"Currently on my fourth semester of a bachelor in Biology"
+    }
+    ,
+
+    "job2": {
+        "title": "University of Bergen",
+        "description": "Year course : Social Anthropology",
+          "time":"AUGUST 2020 - MAY 2021, Bergen",
+          "link":"https://www.uib.no/studier/%C3%85RSV-SANT",
+          "thing1":"Completed a year course in social anthroplogy"
+      }
+      ,
+
+      "job3": {
+        "title": "Bergen Cathedral School — PRE-IB and IB-DIPLOMA",
+        "description": "IB Diploma course",
+          "link":"https://www.bergenkatedralskole.vgs.no/utdanningsprogram/vare-utdanningsprogram/international-baccalaureate-diploma-programme-/",
+          "time":"AUGUST 2017 -JUNI 2020, Bergen",
+          "thing1":"Corresponds to VG1-VG3",
+          "thing2":"All education in English, excellent english skills"
+      }
+
+}

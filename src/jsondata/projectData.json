@@ -1,0 +1,31 @@
+{
+
+    "job1": {
+      "title": "Website: Synomono",
+      "description": "Context-based guessing game all in web, guess the word to win! Ask an ai for hints",
+        "time":"PERSONAL PROJECT",
+        "link":"https://github.com/Freskoko/synomono",
+        "thing1":"Frontend buildt using JS React",
+        "thing2":"Backend buildt using Python Flask, and SQL"
+    }
+    ,
+
+    "job2": {
+        "title": "Discord bot",
+        "description": "Discord bot that can paint, talk, remember and play music.",
+            "link":"https://github.com/Freskoko/DiscordPainterMusic",
+            "time":"PERSONAL PROJECT",
+          "thing1":"Tools used: Discord.py, FFMPEG, OpenAI API, SQLite"
+          
+      }
+      ,
+
+      "job3": {
+        "title": "Large scale virus simulation",
+        "description": "Python program to simulate large scale virus infection",
+            "link":"https://github.com/Freskoko/VirusSimulationOOP",
+            "time":"PERSONAL PROJECT",
+          "thing1":"Simuation that allows for multiple adjustable parameters"
+      }
+
+}

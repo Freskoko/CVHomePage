@@ -1,18 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
-import jobData from "./jobData.json"
-import otherjobsData from "./otherjobsData.json"
+import jobData from "./jsondata/jobData.json"
+import otherjobsData from "./jsondata/otherjobsData.json"
+import educationData from "./jsondata/educationData.json"
+import projectData from "./jsondata/projectData.json"
 
 function StartHeader(){
   return (
-  <div>
+  <div className='StartHeaderTop'>
 
-    <div>
-      <h1> Henrik Brøgger</h1>
+    <div >
+      
+      <h1 className="StartHeaderTop" > Henrik Brøgger</h1>
       <b>  Developer, Biologist, Boulderer </b>
+
     </div>
   
   </div>
+  )
+}
+
+function TopRightImage(){
+  return(
+    <img className = "Mediumimg" src="MyLogo.png"></img>
   )
 }
 
@@ -22,7 +32,7 @@ function InfoBarLinks(){
 
       <div>
         <img src = "https://jfreyberg.github.io/feathericons/map-pin.svg"></img>
-        <p>Norway</p>
+        <p>Bergen</p>
       </div>
 
       <div>
@@ -60,27 +70,11 @@ function WhatdDoIdo() {
 }
 
 
-function CVItem(){
-
-  return (
-  <div className="CVItemClass">
-    <div className='SmallCVLeft'>
-      <p>left</p>
-    </div>
-    <div className='SmallCVRight'>
-      <p>Flask</p>
-      <p>React</p>
-      <p>SQL</p>
-    </div>
-
-  </div>
-  )
-}
 
 function AllCVJobs({ jobData }) {
   return (
-    <div>
-      <ul>
+    <div className = "AllCVJobs">
+      <ul className='AllCVJobsBigList'>
         {Object.keys(jobData).map((key) => (
           <li key={key}>
             <CVItemText data={jobData[key]} />
@@ -92,46 +86,65 @@ function AllCVJobs({ jobData }) {
 }
 
 
-function CVItemText({ data }){
+function CVItemText({ data }) {
   return (
-    <div className = "CVItemText">
-      <p className = "dataTitle">{data.title}</p>
-      <p>{data.description}</p>
-      <p className="dataTime" > {data.time}</p>
+    <div className="AlignRow">
+      <div className="CVItemText">
+        <p className="dataTitle">{data.title}</p>
+        <p>{data.description}</p>
+        <p className="dataTime">{data.time}</p>
 
-      <ul>
-        <li> {data.thing1} </li>
-        <li> {data.thing2} </li>
-      </ul>
+        {data.thing1 && (
+          <ul>
+            <li>{data.thing1}</li>
+
+            {data.thing2 && <li>{data.thing2}</li>}
+          </ul>
+        )}
+      </div>
+
+      <div className="CVItemImage">
+
+      <a href={data.link} target="_blank"><img src="https://jfreyberg.github.io/feathericons/link.svg" className='ImageLinkElement' /></a>
+
+      </div>
 
     </div>
-  )
+  );
 }
 
 function App() {
   return (
-    <div className="App">
+    <div className="AppWrapper">
+      <div className="App">
 
-        <StartHeader/>
+          <TopRightImage/>
 
-        <InfoBarLinks/>
+          <StartHeader/>
 
-        <WhatdDoIdo/>
+          <InfoBarLinks/>
 
-        <h2>Programming Work Experience</h2>
+          <WhatdDoIdo/>
 
-        <AllCVJobs jobData={jobData} />
+          <h2>Programming Work Experience</h2>
 
-        {/* <h2>Projects</h2> */}
+          <AllCVJobs jobData={jobData} />
 
-        {/* <AllCVJobs jobData={projectData} /> */}
+          <h2>Projects</h2> 
+
+          <AllCVJobs jobData={projectData} />
+
+          <h2>Education</h2>
+
+          <AllCVJobs jobData={educationData} />
 
 
-        <h2>Other work</h2>
+          <h2>Other work</h2>
 
-        <AllCVJobs jobData={otherjobsData} />
+          <AllCVJobs jobData={otherjobsData} />
 
-    </div>
+        </div>
+      </div>
   );
 }
 

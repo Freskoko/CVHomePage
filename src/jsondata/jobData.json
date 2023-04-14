@@ -4,6 +4,7 @@
       "title": "University of Bergen, Educator",
       "description": "Group leader for INF100: Introduction to Python",
         "time":"JANUARY 2023 - PRESENT, Bergen",
+        "link":"https://www.uib.no/emne/INF100",
         "thing1":"Teaching new students at the university Python through weekly classes",
         "thing2":"Grading assignments, providing peer code review (CodeGrade) and Discord"
     }
@@ -13,6 +14,7 @@
         "title": "Ginntech AS",
         "description": "Data handling",
           "time":"JANUARY 2022 - JANUARY 2023, Remote",
+          "link":"https://ginntech.com/nb",
           "thing1":"Parsing of large amounts of data using Python (pandas,numpy)",
           "thing2":"Automating form submission using Selenium"
       }
@@ -22,6 +24,7 @@
         "title": "Eviny (NOT YET HAPPENED)",
         "description": "API use, providing digital solutions",
           "time":"JUNE 2023 - AUGUST 2023, Bergen",
+          "link":"https://www.eviny.no/",
           "thing1":"API use",
           "thing2":"GUI prod"
       }
