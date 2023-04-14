@@ -4,6 +4,7 @@ import jobData from "./jsondata/jobData.json"
 import otherjobsData from "./jsondata/otherjobsData.json"
 import educationData from "./jsondata/educationData.json"
 import projectData from "./jsondata/projectData.json"
+import skillsData from "./jsondata/skillsData.json"
 
 function StartHeader(){
   return (
@@ -30,22 +31,22 @@ function InfoBarLinks(){
   return (
     <div className="InfoBarLinks">
 
-      <div>
+      <div className="info-bar-item">
         <img src = "https://jfreyberg.github.io/feathericons/map-pin.svg"></img>
         <p>Bergen</p>
       </div>
 
-      <div>
+      <div className="info-bar-item">
         <img src= "https://jfreyberg.github.io/feathericons/user.svg"></img>
         <p>21 Years</p>
       </div>
 
-      <div>
+      <div className="info-bar-item">
         <img src="https://jfreyberg.github.io/feathericons/mail.svg"></img>
         <p>henrik@brogger.no</p>
       </div>
 
-      <div>
+      <div className="info-bar-item">
         <img className = "Smallimg" src='https://icones.pro/wp-content/uploads/2021/06/symbole-github-noir.png'></img>
        
         <p>
@@ -113,6 +114,41 @@ function CVItemText({ data }) {
   );
 }
 
+
+
+function AllSkillLists({data}){
+  return (
+    <div className="all-skill-lists">
+      {Object.keys(data).map((key) => (
+        <FloatingList key={key} SkillsData={data[key]} />
+      ))}
+    </div>
+  );
+}
+
+function FloatingList({ SkillsData }) {
+  return (
+    <div className="floating-list-container">
+      <div className="floating-list-title">
+        {SkillsData.title} {/* Display the title here */}
+      </div>
+      <div className="floating-list">
+        {SkillsData.skillList.map((item, index) => (
+          <div
+            key={index}
+            className="floating-item"
+            style={{
+              border: `1px solid ${SkillsData.color}`,
+            }}
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="AppWrapper">
@@ -129,6 +165,10 @@ function App() {
           <h2>Programming Work Experience</h2>
 
           <AllCVJobs jobData={jobData} />
+
+          <h2>Skills</h2>
+
+          <AllSkillLists data={skillsData}/>
 
           <h2>Projects</h2> 
 

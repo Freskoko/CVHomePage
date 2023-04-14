@@ -1,0 +1,24 @@
+{
+    "skill1": {
+      "title": "Frontend",
+      "skillList": ["React", "JavaScript", "HTML", "CSS"],
+      "color":"#f20f07"
+    },
+    "skill2": {
+        "title": "Backend",
+        "skillList": ["Python","Flask","SQL","CURL"],
+        "color":"#a6ff00"
+    },
+
+    "skill3": {
+        "title": "Data Science",
+        "skillList": ["R", "Python", "ML", "CSS"],
+        "color":"#07f2ac"
+    },
+
+    "skill4": {
+        "title": "DevOps",
+        "skillList": ["VS Code", "Git", "Jupyter", "Gitlab"],
+        "color":"#182ff5"
+    }
+  }
