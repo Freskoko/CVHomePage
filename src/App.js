@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import jobData from "./jsondata/jobData.json"
 import otherjobsData from "./jsondata/otherjobsData.json"
@@ -6,6 +5,8 @@ import educationData from "./jsondata/educationData.json"
 import projectData from "./jsondata/projectData.json"
 import skillsData from "./jsondata/skillsData.json"
 import OtherskillsData from "./jsondata/OtherskillsData.json"
+
+import Wave from "react-wavify";
 
 function StartHeader(){
   return (
@@ -24,9 +25,16 @@ function StartHeader(){
 
 function TopRightImage() {
   return (
-    <img className="Mediumimg" src="MyLogo.png" alt="Top Right Logo" />
+    <img className="Mediumimg" src={require('./MyLogo.png')} alt="Top Right Logo" />
   );
 }
+
+function TopLeftImage(){
+  return (
+    <img className="MediumimgLeft" src={require('./MySun.webp')} alt="Top Left Logo" />
+  );
+}
+
 
 function InfoBarLinks(){
   return (
@@ -152,10 +160,12 @@ function FloatingList({ SkillsData }) {
 
 function App() {
   return (
-    <div className="AppWrapper">
       <div className="App">
 
+        <div className="AppWrapper">
+
           <TopRightImage/>
+          <TopLeftImage/>
 
           <StartHeader/>
 
@@ -170,6 +180,25 @@ function App() {
           <h2>Skills</h2>
 
           <AllSkillLists data={skillsData}/>
+
+          
+          <div className="waveWrapper">
+          <Wave
+          className='appWave'
+            fill="#38e3fa"
+            paused={false}
+            options={{
+              height: 30,
+              amplitude: 50,
+              speed: 0.20,
+              points: 3,
+            }}
+          />
+        </div>
+
+        </div>
+
+        <div className="AppWrapper2">
 
           <h2>Projects</h2> 
 
@@ -187,7 +216,8 @@ function App() {
 
           <AllCVJobs jobData={otherjobsData} />
 
-        </div>
+          </div>
+
       </div>
   );
 }

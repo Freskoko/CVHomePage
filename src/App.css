@@ -1,18 +1,62 @@
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 /*   background: linear-gradient(180deg, rgba(4, 255, 8, 0.3) 0%, rgba(212, 60, 233, 0.908) 100%); */
 .AppWrapper {
-  background: linear-gradient(180deg, rgba(4, 255, 8, 0.3) 0%, rgba(86, 107, 200, 0.908) 100%);
+  background: linear-gradient(180deg, rgba(3, 251, 251, 0.3) 0%, rgba(234, 238, 3, 0.908) 100%);
   min-height: 100vh;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.AppWrapper2 {
+  background: linear-gradient(180deg, rgb(56, 227, 250), rgba(117, 3, 238, 0.3) 100%);
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  /* margin-bottom: 10px; */
 }
+
+.appWave{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.waveWrapper {
+  /* background: linear-gradient(180deg, rgb(56, 227, 250), rgba(245, 237, 237, 0.3) 100%); */
+  position: relative;
+  margin: -30px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.waveWrapper > svg {
+  position: relative;
+  z-index: 2;
+  display: block;
+  overflow: hidden;
+}
+
+
+
+
 
 .InfoBarLinks {
   display: flex;
@@ -140,31 +184,6 @@ html, body {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-  .floating-list {
-    width: 100%;
-  }
-  .floating-list-container {
-    width: 60%; /* Adjust this value as needed */
-  }
-
-  .all-skill-lists {
-    justify-content: center;
-    align-items: center; /* Add this line */
-    gap: 1rem; /* Add this line */
-    margin-top: 8%;
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-bottom: 50px;
-  }
-
-  .InfoBarLinks {
-    gap: 2rem; /* Add this line to control the spacing between items */
-  }
-}
-
-
-
 
 
 /* TODO change depending on screen size */
@@ -197,5 +216,62 @@ html, body {
   top: 2%;
   border-radius: 50px;
 
+
+
 }
+.MediumimgLeft {
+  width: 20%;
+  position: absolute;
+  left: -8%;
+  top: -14%;
+  border-radius: 50px;
+  animation: spin 50s linear infinite; 
+}
+
+/* Add this block */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .floating-list {
+    width: 100%;
+  }
+  .floating-list-container {
+    width: 60%; /* Adjust this value as needed */
+  }
+
+  .all-skill-lists {
+    justify-content: center;
+    align-items: center; /* Add this line */
+    gap: 1rem; /* Add this line */
+    margin-top: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+  }
+
+  .InfoBarLinks {
+    gap: 2rem; /* Add this line to control the spacing between items */
+  }
+
+  .MediumimgLeft {
+    width: 30%;
+    position: absolute;
+    left: -10%;
+    top: -6%;
+    border-radius: 50px;
+    animation: spin 50s linear infinite; 
+  }
+}
+
+
 
