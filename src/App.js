@@ -5,6 +5,7 @@ import otherjobsData from "./jsondata/otherjobsData.json"
 import educationData from "./jsondata/educationData.json"
 import projectData from "./jsondata/projectData.json"
 import skillsData from "./jsondata/skillsData.json"
+import OtherskillsData from "./jsondata/OtherskillsData.json"
 
 function StartHeader(){
   return (
@@ -178,6 +179,9 @@ function App() {
 
           <AllCVJobs jobData={educationData} />
 
+          <h2>Other Skills</h2>
+
+          <AllSkillLists data={OtherskillsData}/>
 
           <h2>Other work</h2>
 

@@ -5,8 +5,8 @@
       "description": "Context-based guessing game all in web, guess the word to win! Ask an ai for hints",
         "time":"PERSONAL PROJECT",
         "link":"https://github.com/Freskoko/synomono",
-        "thing1":"Frontend buildt using JS React",
-        "thing2":"Backend buildt using Python Flask, and SQL"
+        "thing1":"Frontend buildt using JS React, bacend with Flask and SQL",
+        "thing2":"Uses a ML model to determine how similar words are contextually"
     }
     ,
 

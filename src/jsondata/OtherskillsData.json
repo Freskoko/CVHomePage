@@ -1,0 +1,24 @@
+{
+    "skill1": {
+      "title": "Passions",
+      "skillList": ["Bouldering", "Hiking","Species identification","Progressive metal"],
+      "color":"#f20f07"
+    },
+    "skill2": {
+        "title": "Languages",
+        "skillList": ["Norwegian","English"],
+        "color":"#a6ff00"
+    },
+
+    "skill3": {
+        "title": "Attributes",
+        "skillList": ["Curious", "Problem solving", "Eager learner"],
+        "color":"#07f2ac"
+    },
+
+    "skill4": {
+        "title": "Social Media Tools",
+        "skillList": ["Canva", "CapCut", "Instagram"],
+        "color":"#182ff5"
+    }
+  }
