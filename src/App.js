@@ -62,10 +62,10 @@ function WhatdDoIdo() {
   return (
     <div className="WhatdDoIdo">
       <ul>
-        <li className="list-item">Programmer with 4 years of experience in diverse projects and conditions </li>
-        <li className="list-item">Teacher and Student at UiB, fullstack webdev, API dev, bot creation using selenium, LLM Prompting</li>
+        <li className="list-item">Programmer with 2 years of experience in diverse projects and conditions </li>
+        <li className="list-item">Teacher and Student at UiB, fullstack webdev, API-enthusiast, bot creation using selenium, LLM Prompting</li>
       </ul>
-    </div>
+    </div>  
   );
 }
 
