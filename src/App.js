@@ -1,9 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import jobData from "./jsondata/jobData.json"
 import otherjobsData from "./jsondata/otherjobsData.json"
 import educationData from "./jsondata/educationData.json"
 import projectData from "./jsondata/projectData.json"
+import skillsData from "./jsondata/skillsData.json"
+import OtherskillsData from "./jsondata/OtherskillsData.json"
+
+import Wave from "react-wavify";
 
 function StartHeader(){
   return (
@@ -20,32 +23,39 @@ function StartHeader(){
   )
 }
 
-function TopRightImage(){
-  return(
-    <img className = "Mediumimg" src="MyLogo.png"></img>
-  )
+function TopRightImage() {
+  return (
+    <img className="Mediumimg" src={require('./MyLogo.png')} alt="Top Right Logo" />
+  );
 }
+
+function TopLeftImage(){
+  return (
+    <img className="MediumimgLeft" src={require('./MySun.webp')} alt="Top Left Logo" />
+  );
+}
+
 
 function InfoBarLinks(){
   return (
     <div className="InfoBarLinks">
 
-      <div>
+      <div className="info-bar-item">
         <img src = "https://jfreyberg.github.io/feathericons/map-pin.svg"></img>
         <p>Bergen</p>
       </div>
 
-      <div>
+      <div className="info-bar-item">
         <img src= "https://jfreyberg.github.io/feathericons/user.svg"></img>
         <p>21 Years</p>
       </div>
 
-      <div>
+      <div className="info-bar-item">
         <img src="https://jfreyberg.github.io/feathericons/mail.svg"></img>
         <p>henrik@brogger.no</p>
       </div>
 
-      <div>
+      <div className="info-bar-item">
         <img className = "Smallimg" src='https://icones.pro/wp-content/uploads/2021/06/symbole-github-noir.png'></img>
        
         <p>
@@ -105,7 +115,7 @@ function CVItemText({ data }) {
 
       <div className="CVItemImage">
 
-      <a href={data.link} target="_blank"><img src="https://jfreyberg.github.io/feathericons/link.svg" className='ImageLinkElement' /></a>
+      <a href={data.link} target="_blank"  rel="noopener noreferrer"><img src="https://jfreyberg.github.io/feathericons/link.svg" className='ImageLinkElement' /></a>
 
       </div>
 
@@ -113,12 +123,49 @@ function CVItemText({ data }) {
   );
 }
 
+
+
+function AllSkillLists({data}){
+  return (
+    <div className="all-skill-lists">
+      {Object.keys(data).map((key) => (
+        <FloatingList key={key} SkillsData={data[key]} />
+      ))}
+    </div>
+  );
+}
+
+function FloatingList({ SkillsData }) {
+  return (
+    <div className="floating-list-container">
+      <div className="floating-list-title">
+        {SkillsData.title} {/* Display the title here */}
+      </div>
+      <div className="floating-list">
+        {SkillsData.skillList.map((item, index) => (
+          <div
+            key={index}
+            className="floating-item"
+            style={{
+              border: `1px solid ${SkillsData.color}`,
+            }}
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
-    <div className="AppWrapper">
       <div className="App">
 
+        <div className="AppWrapper">
+
           <TopRightImage/>
+          <TopLeftImage/>
 
           <StartHeader/>
 
@@ -130,6 +177,29 @@ function App() {
 
           <AllCVJobs jobData={jobData} />
 
+          <h2>Skills</h2>
+
+          <AllSkillLists data={skillsData}/>
+
+          
+          <div className="waveWrapper">
+          <Wave
+          className='appWave'
+            fill="#38e3fa"
+            paused={false}
+            options={{
+              height: 30,
+              amplitude: 50,
+              speed: 0.20,
+              points: 3,
+            }}
+          />
+        </div>
+
+        </div>
+
+        <div className="AppWrapper2">
+
           <h2>Projects</h2> 
 
           <AllCVJobs jobData={projectData} />
@@ -138,12 +208,16 @@ function App() {
 
           <AllCVJobs jobData={educationData} />
 
+          <h2>Other Skills</h2>
+
+          <AllSkillLists data={OtherskillsData}/>
 
           <h2>Other work</h2>
 
           <AllCVJobs jobData={otherjobsData} />
 
-        </div>
+          </div>
+
       </div>
   );
 }
