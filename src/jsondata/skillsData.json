@@ -12,7 +12,7 @@
 
     "skill3": {
         "title": "Data Science",
-        "skillList": ["R", "Python", "ML", "CSS"],
+        "skillList": ["R", "Python", "ML", "Visualization"],
         "color":"#07f2ac"
     },
 
