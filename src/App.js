@@ -5,6 +5,8 @@ import educationData from "./jsondata/educationData.json"
 import projectData from "./jsondata/projectData.json"
 import skillsData from "./jsondata/skillsData.json"
 import OtherskillsData from "./jsondata/OtherskillsData.json"
+import whitelinkLogo from "./whiteLinkLogo.png"
+import blacklinkLogo from "./blackLinkLogo.svg"
 
 import Wave from "react-wavify";
 
@@ -81,13 +83,13 @@ function WhatdDoIdo() {
 
 
 
-function AllCVJobs({ jobData }) {
+function AllCVJobs({ jobData, color_class, img_col}) {
   return (
     <div className = "AllCVJobs">
-      <ul className='AllCVJobsBigList'>
+      <ul className={color_class}>
         {Object.keys(jobData).map((key) => (
           <li key={key}>
-            <CVItemText data={jobData[key]} />
+            <CVItemText data={jobData[key]} imgtype={img_col}/>
           </li>
         ))}
       </ul>
@@ -96,7 +98,7 @@ function AllCVJobs({ jobData }) {
 }
 
 
-function CVItemText({ data }) {
+function CVItemText({ data,imgtype }) {
   return (
     <div className="AlignRow">
       <div className="CVItemText">
@@ -115,7 +117,7 @@ function CVItemText({ data }) {
 
       <div className="CVItemImage">
 
-      <a href={data.link} target="_blank"  rel="noopener noreferrer"><img src="https://jfreyberg.github.io/feathericons/link.svg" className='ImageLinkElement' /></a>
+      <a href={data.link} target="_blank"  rel="noopener noreferrer"><img src={imgtype} className='ImageLinkElement' /></a>
 
       </div>
 
@@ -125,21 +127,23 @@ function CVItemText({ data }) {
 
 
 
-function AllSkillLists({data}){
+function AllSkillLists({data, class_colour}){
   return (
     <div className="all-skill-lists">
       {Object.keys(data).map((key) => (
-        <FloatingList key={key} SkillsData={data[key]} />
+        <FloatingList key={key} SkillsData={data[key]} class_colour={class_colour}/>
       ))}
     </div>
   );
 }
 
-function FloatingList({ SkillsData }) {
+function FloatingList({ SkillsData, class_colour }) {
   return (
-    <div className="floating-list-container">
-      <div className="floating-list-title">
-        {SkillsData.title} {/* Display the title here */}
+    <div className={`floating-list-container ${class_colour}`}> {/* Move the class_colour here */}
+      <div className={`floating-list-title ${class_colour}`}>
+        <p className={class_colour}>
+          {SkillsData.title}
+        </p>
       </div>
       <div className="floating-list">
         {SkillsData.skillList.map((item, index) => (
@@ -164,8 +168,22 @@ function App() {
 
         <div className="AppWrapper">
 
+        <div className="waveWrapper">
+            <Wave
+          className="appWaveBelow"
+          fill=""
+          paused={false}
+          options={{
+            height: 100,
+            amplitude: 50,
+            speed: 0.20,
+            points: 3,
+            }}
+          />
+        </div>
+
           <TopRightImage/>
-          <TopLeftImage/>
+          {/* <TopLeftImage/> */}
 
           <StartHeader/>
 
@@ -175,17 +193,17 @@ function App() {
 
           <h2>Programming Work Experience</h2>
 
-          <AllCVJobs jobData={jobData} />
+          <AllCVJobs jobData={jobData} color_class="AllCVJobsBigList_Black" img_col={blacklinkLogo}/>
 
           <h2>Skills</h2>
 
-          <AllSkillLists data={skillsData}/>
+          <AllSkillLists data={skillsData} color_class="AllCVJobsBigList_Black"/>
 
           
           <div className="waveWrapper">
           <Wave
           className='appWave'
-            fill="#38e3fa"
+            fill="#000000"
             paused={false}
             options={{
               height: 30,
@@ -200,23 +218,37 @@ function App() {
 
         <div className="AppWrapper2">
 
-          <h2>Projects</h2> 
+          <h2 style={{color:"#FFFFFF"}}  >Projects</h2> 
 
-          <AllCVJobs jobData={projectData} />
+          <AllCVJobs jobData={projectData} color_class="AllCVJobsBigList_White" img_col={whitelinkLogo}/>
 
-          <h2>Education</h2>
+          <h2 style={{color:"#FFFFFF"}}> Education</h2>
 
-          <AllCVJobs jobData={educationData} />
+          <AllCVJobs jobData={educationData} color_class="AllCVJobsBigList_White" img_col={whitelinkLogo}/>
 
-          <h2>Other Skills</h2>
+          <h2 style={{color:"#FFFFFF"}} > Other Skills</h2>
 
-          <AllSkillLists data={OtherskillsData}/>
+          <AllSkillLists data={OtherskillsData} class_colour="white-text" img_col={whitelinkLogo}/>
 
-          <h2>Other work</h2>
+          <h2  style={{color:"#FFFFFF"}}> Other work</h2>
 
-          <AllCVJobs jobData={otherjobsData} />
+          <AllCVJobs jobData={otherjobsData} color_class="AllCVJobsBigList_White" img_col={whitelinkLogo}/>
 
-          </div>
+          <div className="waveWrapper">
+            <Wave
+          className="appWave"
+          fill="#FFFFFF"
+          paused={false}
+          options={{
+            height: 20,
+            amplitude: 30,
+            speed: 0.20,
+            points: 3,
+            }}
+          />
+        </div>
+
+        </div>
 
       </div>
   );

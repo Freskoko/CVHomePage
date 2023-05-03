@@ -3,25 +3,27 @@ html, body {
   margin: 0;
   padding: 0;
 }
-/*   background: linear-gradient(180deg, rgba(4, 255, 8, 0.3) 0%, rgba(212, 60, 233, 0.908) 100%); */
+
 .AppWrapper {
-  background: linear-gradient(180deg, rgba(3, 251, 251, 0.3) 0%, rgba(234, 238, 3, 0.908) 100%);
+  background: linear-gradient(180deg, rgba(220, 209, 209) 0%rgba(255, 255, 255)8) 100%;
   min-height: 100vh;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
+/* background: linear-gradient(180deg, rgba(3, 251, 251, 0.3) 0%, rgba(234, 238, 3, 0.908) 100%); */
 
 
 .AppWrapper2 {
-  background: linear-gradient(180deg, rgb(56, 227, 250), rgba(117, 3, 238, 0.3) 100%);
+  background: linear-gradient(180deg, rgb(0, 0, 0), rgb(0, 0, 0) 100%);
   min-height: 100vh;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
+/*   background: linear-gradient(180deg, rgb(56, 227, 250), rgba(117, 3, 238, 0.3) 100%); */
 
 .App {
   text-align: center;
@@ -33,6 +35,14 @@ html, body {
 }
 
 .appWave{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.appWaveBelow{
+  transform: scaleY(-1);
   width: 100%;
   margin: 0;
   padding: 0;
@@ -54,6 +64,13 @@ html, body {
   overflow: hidden;
 }
 
+.black-text{
+  color: #000000;
+}
+
+.floating-list-container.white-text p {
+  color: #FFFFFF;
+}
 
 
 
@@ -86,7 +103,6 @@ html, body {
 }
 
 .list-item {
-
   padding: 0;
   list-style-position: inside;
   text-align: left;
@@ -122,11 +138,19 @@ html, body {
 }
 
 
-
-.AllCVJobsBigList {
+.AllCVJobsBigList_White{
   list-style-type: none;
   padding: 0;
+  color: #f3f3f3;
 }
+
+.AllCVJobsBigList_Black{
+  list-style-type: none;
+  padding: 0;
+  color: #000000;
+}
+
+
 
 .dataTitle{
   font-weight: 1000;
