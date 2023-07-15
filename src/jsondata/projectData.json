@@ -26,6 +26,14 @@
             "link":"https://github.com/Freskoko/VirusSimulationOOP",
             "time":"PERSONAL PROJECT",
           "thing1":"Simulation that allows for multiple adjustable parameters"
+      },
+
+      "job4": {
+        "title": "Lyrical Bot",
+        "description": "Python program that takes in lyrics, and makes new lyrics that rhyme with the ones provided",
+            "link":"https://github.com/Freskoko/LyricsToRhyme",
+            "time":"PERSONAL PROJECT",
+          "thing1":"Uses NLP (Natural language processing)"
       }
 
 }

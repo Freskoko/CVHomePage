@@ -1,6 +1,15 @@
 {
 
-    "job1": {
+  "job1": {
+    "title": "Eviny Fornybar",
+    "description": "Developer: Data flow",
+      "time":"JUNE 2023 - PRESENT, Bergen",
+      "link":"https://www.eviny.no/",
+      "thing1":"Developing robust systems to parse data through Python and SQL",
+      "thing2":"Infrastructure used: Docker, Materialize, Redpanda (Kafka)"
+  },
+
+    "job2": {
       "title": "University of Bergen, Educator",
       "description": "Group leader for INF100: Introduction to Python",
         "time":"JANUARY 2023 - PRESENT, Bergen",
@@ -10,23 +19,14 @@
     }
     ,
 
-    "job2": {
+    "job3": {
         "title": "Ginntech AS",
-        "description": "Data handling",
+        "description": "Developer: Data handling",
           "time":"JANUARY 2022 - JANUARY 2023, Remote",
           "link":"https://ginntech.com/nb",
           "thing1":"Parsing of large amounts of data using Python (pandas,numpy)",
           "thing2":"Automating form submission using Selenium"
       }
-      ,
-
-      "job3": {
-        "title": "Eviny (IN FUTURE)",
-        "description": "API use, providing digital solutions",
-          "time":"JUNE 2023 - AUGUST 2023, Bergen",
-          "link":"https://www.eviny.no/",
-          "thing1":"API use",
-          "thing2":"GUI prod"
-      }
+      
 
 }
