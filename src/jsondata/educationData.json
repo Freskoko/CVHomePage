@@ -1,15 +1,25 @@
 {
 
-    "job1": {
+  "job1": {
+    "title": "University of Bergen",
+    "description": "Bachlelor in Bioinformatics",
+      "time":"AUGUST 2023 - CURRENT, Bergen",
+      "link":"https://www.uib.no/studier/BAMN-BINF",
+      "thing1":"Recently started a bioinformatics bachelor",
+      "thing2":"I have already completed many subjects, and am starting on my second year"
+  },
+  
+  "job2": {
       "title": "University of Bergen",
       "description": "Bachlelor in Biology",
         "time":"AUGUST 2021 - CURRENT, Bergen",
         "link":"https://www.uib.no/studier/BAMN-BIO",
-        "thing1":"Currently on my fourth semester of a bachelor in Biology"
+        "thing1":"Completed 2 years of a biology-bachelor",
+        "thing2":"I swapped course to bioinformatics, to pursue my passion for programming"
     }
     ,
 
-    "job2": {
+    "job3": {
         "title": "University of Bergen",
         "description": "Year course : Social Anthropology",
           "time":"AUGUST 2020 - MAY 2021, Bergen",
@@ -18,7 +28,7 @@
       }
       ,
 
-      "job3": {
+      "job4": {
         "title": "Bergen Cathedral School — PRE-IB and IB-DIPLOMA",
         "description": "IB Diploma course",
           "link":"https://www.bergenkatedralskole.vgs.no/utdanningsprogram/vare-utdanningsprogram/international-baccalaureate-diploma-programme-/",
