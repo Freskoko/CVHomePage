@@ -1,6 +1,8 @@
-# This is my home page!
+# This is my CV home page!
 
 To run locally, clone this repo and run `npm start`
+
+To deploy after being worked on: `npm run deploy`
 
 # Run in WSL:
 
