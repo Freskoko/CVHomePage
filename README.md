@@ -1,5 +1,7 @@
 # This is my CV home page!
 
+Check it out here [link](https://freskoko.github.io/CVHomePage/)
+
 To run locally, clone this repo and run `npm start`
 
 To deploy after being worked on: `npm run deploy`
