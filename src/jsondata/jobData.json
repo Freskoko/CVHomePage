@@ -2,11 +2,11 @@
 
   "job1": {
     "title": "Eviny Fornybar",
-    "description": "Developer: Data flow",
+    "description": "Junior Developer",
       "time":"JUNE 2023 - PRESENT, Bergen",
       "link":"https://www.eviny.no/",
-      "thing1":"Developing robust systems to parse data through Python and SQL",
-      "thing2":"Infrastructure used: Docker, Materialize, Redpanda (Kafka)"
+      "thing1":"Developing robust infrastructure to parse data of several formats through Python and SQL",
+      "thing2":"Tools used: Redpanda (Kafka), Materialize (SQL), Terraform"
   },
 
     "job2": {
@@ -26,7 +26,14 @@
           "link":"https://ginntech.com/nb",
           "thing1":"Parsing of large amounts of data using Python (pandas,numpy)",
           "thing2":"Automating form submission using Selenium"
-      }
+      },
+
+    "job4": {
+      "title": "Winner of 2023 UiB data science competition",
+      "description": "Carried out data exploration and model creation on a biological dataset",
+        "time":"DECEMBER 2023",
+        "link":"https://ginntech.com/nb"
+    }
       
 
 }

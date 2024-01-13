@@ -1,13 +1,13 @@
 {
     "skill1": {
-        "title": "Data Science",
-        "skillList": ["R", "Python", "ML", "SQL"],
+        "title": "Known languages",
+        "skillList": ["Python","R","Java", "SQL"],
         "color":"#07f2ac"
     },
 
     "skill4": {
         "title": "DevOps",
-        "skillList": ["Kafka", "Git", "Docker", "Materialize"],
+        "skillList": ["Kafka", "Git", "Ubuntu", "NixOS"],
         "color":"#182ff5"
     },
     

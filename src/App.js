@@ -17,7 +17,7 @@ function StartHeader(){
     <div >
       
       <h1 className="StartHeaderTop" > Henrik Brøgger</h1>
-      <b>  Developer, Biologist, Boulderer </b>
+      <b>  Developer, Biologist, Cyclist </b>
 
     </div>
   
@@ -49,7 +49,7 @@ function InfoBarLinks(){
 
       <div className="info-bar-item">
         <img src= "https://jfreyberg.github.io/feathericons/user.svg"></img>
-        <p>21 Years</p>
+        <p>22 Years</p>
       </div>
 
       <div className="info-bar-item">
@@ -65,6 +65,18 @@ function InfoBarLinks(){
         </p>
 
       </div>
+
+      <div className="info-bar-item">
+        <img className = "Smallimg" src='https://cdn-icons-png.flaticon.com/512/61/61109.png'></img>
+       
+        <p>
+          <a href="https://www.linkedin.com/in/henrik-br%C3%B8gger-811749180/">linkedin</a>
+        </p>
+
+      </div>
+
+
+
     </div>
 
   )
@@ -74,8 +86,9 @@ function WhatdDoIdo() {
   return (
     <div className="WhatdDoIdo">
       <ul>
-        <li className="list-item">Programmer with 3 years of experience in diverse projects and conditions </li>
-        <li className="list-item">Teacher and Student at UiB, data-processing/parsing, fullstack webdev</li>
+        <li className="list-item">Programmer with 4 years of experience in diverse projects and conditions </li>
+        <li className="list-item">Teacher and Student at UiB </li>
+        <li className="list-item">Developer at Eviny Fornybar (formerly BKK) </li>
       </ul>
     </div>  
   );
@@ -218,13 +231,13 @@ function App() {
 
         <div className="AppWrapper2">
 
-          <h2 style={{color:"#FFFFFF"}}  >Projects</h2> 
-
-          <AllCVJobs jobData={projectData} color_class="AllCVJobsBigList_White" img_col={whitelinkLogo}/>
-
           <h2 style={{color:"#FFFFFF"}}> Education</h2>
 
           <AllCVJobs jobData={educationData} color_class="AllCVJobsBigList_White" img_col={whitelinkLogo}/>
+
+          <h2 style={{color:"#FFFFFF"}}  >Projects</h2> 
+
+          <AllCVJobs jobData={projectData} color_class="AllCVJobsBigList_White" img_col={whitelinkLogo}/>
 
           <h2 style={{color:"#FFFFFF"}} > Other Skills</h2>
 

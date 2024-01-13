@@ -1,5 +1,14 @@
 {
 
+  "job2": {
+    "title": "Data science: Cycle traffic predictor",
+    "description": "A data science project using public data to create a model to predict future cycle traffic given the date and weather. Comes with a frontend website",
+        "link":"https://github.com/Freskoko/CycleTrafficWeather",
+        "time":"PERSONAL PROJECT",
+      "thing1":"Tools used: sklearn, jupyter, flask"
+      
+  },
+
     "job1": {
       "title": "Website: Synomono",
       "description": "Context-based guessing game all in web, guess the word to win! Ask an ai for hints",
@@ -9,31 +18,23 @@
         "thing2":"Uses a ML model to determine how similar words are contextually"
     }
     ,
-
-    "job2": {
-        "title": "Discord bot",
-        "description": "Discord bot that can paint, talk, remember and play music.",
-            "link":"https://github.com/Freskoko/DiscordPainterMusic",
-            "time":"PERSONAL PROJECT",
-          "thing1":"Tools used: Discord.py, FFMPEG, OpenAI API, SQLite"
-          
-      }
-      ,
+      
 
       "job3": {
+        "title": "Absurd 'meme' generator",
+        "description": "Python program that given a prompt, creates an absurd meme complete with video and words",
+            "link":"https://github.com/Freskoko/AbsurdGen",
+            "time":"PERSONAL PROJECT",
+          "thing1":"Uses OpenAI API, moviepy, cv2"
+
+      },
+
+      "job4": {
         "title": "Large scale virus simulation",
         "description": "Python program to simulate large scale virus infection",
             "link":"https://github.com/Freskoko/VirusSimulationOOP",
             "time":"PERSONAL PROJECT",
           "thing1":"Simulation that allows for multiple adjustable parameters"
-      },
-
-      "job4": {
-        "title": "Lyrical Bot",
-        "description": "Python program that takes in lyrics, and makes new lyrics that rhyme with the ones provided",
-            "link":"https://github.com/Freskoko/LyricsToRhyme",
-            "time":"PERSONAL PROJECT",
-          "thing1":"Uses NLP (Natural language processing)"
       }
 
 }

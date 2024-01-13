@@ -4,19 +4,14 @@
       "skillList": ["Bouldering", "Hiking","Species identification","Progressive metal"],
       "color":"#f20f07"
     },
-    "skill2": {
-        "title": "Languages",
-        "skillList": ["Norwegian","English"],
-        "color":"#a6ff00"
-    },
 
-    "skill3": {
+    "skill2": {
         "title": "Attributes",
         "skillList": ["Curious", "Problem solver", "Eager learner"],
         "color":"#07f2ac"
     },
 
-    "skill4": {
+    "skill3": {
         "title": "Social Media Tools",
         "skillList": ["Canva", "CapCut", "Instagram"],
         "color":"#182ff5"
