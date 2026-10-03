@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+<html>
+<head>
+    <title>My Projects</title>
+</head>
+<body>
+    <h1>My Projects</h1>
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <ul>
+        <li>
+            <a href="./master/y_method_comparison_all_samples.html">
+                Method comparison : all samples
+            </a>
+        </li>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+        <li>
+            <a href="./master/y_method_comparison_malignant_cells_only.html">
+                Method comparison : samples with malignant cells only
+            </a>
+        </li>
+        <li>
+            <a href="./master/y_method_comparison_malignant_cells_only.html">
+                Method comparison : samples with no malignant cells at all
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
